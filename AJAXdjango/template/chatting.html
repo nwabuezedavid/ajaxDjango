@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chHome</title>{% static '' %}
+    <link rel="stylesheet" href="{% static 'css/chatting.css' %}">
+    <script src="{% static 'js/chatting.js' %}" defer></script>
+</head>
+<body>
+    <section class="sec1">
+        <div>
+            <input class="room" type="text" placeholder="ROOM Name ">
+            <input class="urname" type="text" placeholder="Your Name ">
+            <button class="enter">ENTER ROOM </button>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div class="head">
+            <img src="{% static 'asset/image/103699021_2934000186648719_592266284527549086_n.png ' %}" alt="" >
+            <h4> ROOM Name: David NWabueze</h4>
+            <h6>exit Room</h6>
+        </div>
+        <div class="main__displayMassage">
+            <span class="sender">
+
+            <h2>hello </h2>
+            <small>1, mar , 20034</small>
+        </span>
+            <span class="sender">
+
+            <h2>hello </h2>
+        </span>
+            <span class="recever">
+
+            <h2>how are u</h2>
+            <small>1, mar , 20034</small>
+        </span>
+        </div>
+        <div class="sendMag">
+            <input type="text" class="send__input" placeholder="ENter Your Message Here">
+            <button class="sendMAx">Send</button>
+        </div>
+    </section>
+</body>
+</html>

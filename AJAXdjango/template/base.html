@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'bases.css' %}" >
+    <script src="{% static 'bases.js' %}" defer></script>
+
+</head>
+<body>
+  <section>
+<h1 class="names">{{names}}</h1>
+    <div>
+        <form action="" class="formApernt">
+ {% csrf_token %}
+            <input type="text" placeholder="enter token" class="token" hidden value="{{csrf_token}}">
+            <input type="text" placeholder="enter id_title" name="titleifor" class="id_title">
+            <input type="text" placeholder="enter id_body" name="inforbody" class="id_body">
+            <big>
+                <button type="reset">RESET</button>
+                <button class="btn">submit</button>
+                <button class="update">Update</button>
+            </big>
+        </form>
+    </div>
+    <div class="main__content">
+        <div>
+            <h2>the world is coiming to an end</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi placeat neque itaque in, tenetur nihil. Veritatis blanditiis ratione modi?</p>
+            <small>
+                <a href="">edit</a>
+                <a href="">delete</a>
+            </small>
+        </div>
+    </div>
+  </section>
+</body>
+</html>
